@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CommunicationToSiri" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNo-5a-4sA">
+                                <color key="backgroundColor" red="1" green="0.046413387279317764" blue="0.099521040256558613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="request Siri auth">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="authClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6D2-7o-HSP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWD-B1-Mug">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aNo-5a-4sA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RfD-gC-c2D"/>
+                            <constraint firstItem="OWD-B1-Mug" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a6r-Zu-jYb"/>
+                            <constraint firstItem="aNo-5a-4sA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bFj-IP-V53"/>
+                            <constraint firstItem="OWD-B1-Mug" firstAttribute="top" secondItem="aNo-5a-4sA" secondAttribute="bottom" constant="20" id="fZh-cl-ZGo"/>
+                            <constraint firstItem="OWD-B1-Mug" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="rfD-gX-QVh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authLabel" destination="OWD-B1-Mug" id="s9R-2m-P3k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
